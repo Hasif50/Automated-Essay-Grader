@@ -1,0 +1,205 @@
+{
+    "name": "Standard Essay Rubric",
+    "description": "General purpose essay evaluation rubric for academic writing",
+    "version": "1.0",
+    "created_by": "Hasif50",
+    "workspace": "Hasif's Workspace",
+    "criteria": {
+        "content": {
+            "name": "Content & Ideas",
+            "weight": 0.35,
+            "max_score": 25,
+            "description": "Quality of ideas, depth of analysis, and relevance to topic",
+            "levels": {
+                "excellent": {
+                    "score_range": [
+                        23,
+                        25
+                    ],
+                    "description": "Ideas are insightful, well-developed, and highly relevant. Shows deep understanding and original thinking."
+                },
+                "proficient": {
+                    "score_range": [
+                        20,
+                        22
+                    ],
+                    "description": "Ideas are clear, well-developed, and relevant. Shows good understanding of the topic."
+                },
+                "developing": {
+                    "score_range": [
+                        15,
+                        19
+                    ],
+                    "description": "Ideas are present but may lack depth or full development. Some relevance to topic."
+                },
+                "beginning": {
+                    "score_range": [
+                        10,
+                        14
+                    ],
+                    "description": "Ideas are unclear or underdeveloped. Limited relevance to topic."
+                },
+                "inadequate": {
+                    "score_range": [
+                        0,
+                        9
+                    ],
+                    "description": "Ideas are absent, unclear, or irrelevant to the topic."
+                }
+            }
+        },
+        "organization": {
+            "name": "Organization & Structure",
+            "weight": 0.25,
+            "max_score": 25,
+            "description": "Logical flow, paragraph structure, and overall organization",
+            "levels": {
+                "excellent": {
+                    "score_range": [
+                        23,
+                        25
+                    ],
+                    "description": "Clear introduction, logical progression, smooth transitions, strong conclusion."
+                },
+                "proficient": {
+                    "score_range": [
+                        20,
+                        22
+                    ],
+                    "description": "Good organization with clear structure and adequate transitions."
+                },
+                "developing": {
+                    "score_range": [
+                        15,
+                        19
+                    ],
+                    "description": "Basic organization present but may lack clarity or smooth flow."
+                },
+                "beginning": {
+                    "score_range": [
+                        10,
+                        14
+                    ],
+                    "description": "Minimal organization, unclear structure, weak transitions."
+                },
+                "inadequate": {
+                    "score_range": [
+                        0,
+                        9
+                    ],
+                    "description": "No clear organizational structure or logical flow."
+                }
+            }
+        },
+        "grammar": {
+            "name": "Grammar & Mechanics",
+            "weight": 0.20,
+            "max_score": 25,
+            "description": "Grammar, spelling, punctuation, and sentence structure",
+            "levels": {
+                "excellent": {
+                    "score_range": [
+                        23,
+                        25
+                    ],
+                    "description": "Virtually error-free with sophisticated sentence structure."
+                },
+                "proficient": {
+                    "score_range": [
+                        20,
+                        22
+                    ],
+                    "description": "Minor errors that don't interfere with meaning."
+                },
+                "developing": {
+                    "score_range": [
+                        15,
+                        19
+                    ],
+                    "description": "Some errors present but meaning is generally clear."
+                },
+                "beginning": {
+                    "score_range": [
+                        10,
+                        14
+                    ],
+                    "description": "Frequent errors that may interfere with understanding."
+                },
+                "inadequate": {
+                    "score_range": [
+                        0,
+                        9
+                    ],
+                    "description": "Numerous errors that significantly impede understanding."
+                }
+            }
+        },
+        "style": {
+            "name": "Style & Voice",
+            "weight": 0.20,
+            "max_score": 25,
+            "description": "Word choice, sentence variety, clarity, and tone",
+            "levels": {
+                "excellent": {
+                    "score_range": [
+                        23,
+                        25
+                    ],
+                    "description": "Sophisticated word choice, varied sentence structure, clear voice."
+                },
+                "proficient": {
+                    "score_range": [
+                        20,
+                        22
+                    ],
+                    "description": "Good word choice and sentence variety, appropriate tone."
+                },
+                "developing": {
+                    "score_range": [
+                        15,
+                        19
+                    ],
+                    "description": "Adequate word choice, some sentence variety, generally appropriate tone."
+                },
+                "beginning": {
+                    "score_range": [
+                        10,
+                        14
+                    ],
+                    "description": "Limited word choice, little sentence variety, unclear tone."
+                },
+                "inadequate": {
+                    "score_range": [
+                        0,
+                        9
+                    ],
+                    "description": "Poor word choice, monotonous sentences, inappropriate tone."
+                }
+            }
+        }
+    },
+    "grade_scale": {
+        "A": {
+            "min": 90,
+            "max": 100
+        },
+        "B": {
+            "min": 80,
+            "max": 89
+        },
+        "C": {
+            "min": 70,
+            "max": 79
+        },
+        "D": {
+            "min": 60,
+            "max": 69
+        },
+        "F": {
+            "min": 0,
+            "max": 59
+        }
+    },
+    "instructions": "Use this rubric to evaluate essays across four main criteria. Consider the weight of each criterion when calculating the overall score.",
+    "attribution": "From Hasif's Workspace - Educational Excellence Through AI"
+}

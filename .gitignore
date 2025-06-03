@@ -1,0 +1,115 @@
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Streamlit
+.streamlit/
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data files (keep structure, ignore content)
+data/sample_essays/*.pdf
+data/sample_essays/*.docx
+data/sample_essays/*.txt
+data/outputs/*.pdf
+data/outputs/*.csv
+data/outputs/*.json
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Azure
+.azure/
+
+# Model files
+models/
+*.pkl
+*.joblib
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+
+# API Keys and secrets
+secrets/
+keys/
+credentials/
+
+# From Hasif's Workspace - Custom ignores
+workspace_temp/
+hasif_temp/
