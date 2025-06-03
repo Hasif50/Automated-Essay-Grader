@@ -10,7 +10,7 @@ import json
 import os
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 
 
 @dataclass

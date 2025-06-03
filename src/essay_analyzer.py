@@ -11,9 +11,8 @@ import re
 import nltk
 import textstat
 from typing import Dict, List, Optional, Any
-from langchain.llms import OpenAI
-from langchain.chat_models import ChatOpenAI, AzureChatOpenAI
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI, AzureChatOpenAI
+from langchain_core.messages import HumanMessage, SystemMessage
 from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import spacy

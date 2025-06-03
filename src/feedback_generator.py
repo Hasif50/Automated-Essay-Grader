@@ -7,7 +7,7 @@ Author: Hasif50
 """
 
 from typing import Dict, List, Optional, Any
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 import json
 
 
