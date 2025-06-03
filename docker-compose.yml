@@ -1,0 +1,68 @@
+# Docker Compose for Automated Essay Grader
+# From Hasif's Workspace
+# Author: Hasif50
+
+version: '3.8'
+
+services:
+  essay-grader:
+    build: .
+    container_name: automated-essay-grader
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - AZURE_API_KEY=${AZURE_API_KEY}
+      - AZURE_ENDPOINT=${AZURE_ENDPOINT}
+      - COHERE_API_KEY=${COHERE_API_KEY}
+      - APP_TITLE=Automated Essay Grader
+      - WORKSPACE_ATTRIBUTION=Hasif's Workspace
+      - DEVELOPER_NAME=Hasif50
+    volumes:
+      - ./data/outputs:/app/data/outputs
+      - ./logs:/app/logs
+      - ./data/rubrics:/app/data/rubrics:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - essay-grader-network
+
+  # Optional: Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: essay-grader-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - essay-grader
+    restart: unless-stopped
+    networks:
+      - essay-grader-network
+    profiles:
+      - production
+
+networks:
+  essay-grader-network:
+    driver: bridge
+
+volumes:
+  essay-outputs:
+    driver: local
+  essay-logs:
+    driver: local
+
+# Metadata
+x-metadata:
+  workspace: "Hasif's Workspace"
+  author: "Hasif50"
+  description: "AI-Powered Essay Analysis and Grading System"
+  version: "1.0.0"
