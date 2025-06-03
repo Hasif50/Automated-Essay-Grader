@@ -160,11 +160,12 @@ Contains all prompt templates used for different aspects of essay evaluation.
 
 ## About
 
-The Automated Essay Grader project is designed to assist educators and students by providing consistent, detailed, and constructive feedback on written work. This tool aims to enhance the learning experience through AI-powered analysis.
+Real-world Problem Solved: Assists educators in providing consistent, unbiased grading with actionable feedback for students.
+The Automated Essay Grader project is designed to assist educators and students by providing consistent, detailed, and constructive feedback on written work. This tool aims to enhance the learning experience through AI-powered analysis. Real-world 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
 
 ## Acknowledgments
 
